@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Spirograph Sandbox</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+      
+        <div id="pageHead">
+          <div id="headerBacking"></div>
+        </div>
+                
+        <br><br>
+        
+        <div id="navbar">
+          <img src="Images/logo.png" id="navlogo">
+          <button id="homebtn" class="navbtn"><b>HOME</b></button>
+          <button id="aboutbtn" class="navbtn"><b>ABOUT</b></button>
+        </div>
+      
+        <div id="pageBody" style="padding:10px;">
+          <canvas id="canvas2" style="position:absolute;"></canvas>
+          <canvas id="canvas1" style="width:100%; height:73%; transform: rotateX(180deg); "></canvas>
+          
+        </div>
+
+        <script src="code.js"></script>
+        <script src="spirograph.js"></script>
+    </body>
+</html>

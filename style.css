@@ -1,3 +1,120 @@
-h1, h2 {
-  font-family: Lato;
+:root{
+  --themeBlue:#7180ff;
+  --backblue:#3644c9;
+  --darkdarkgray:rgb(60, 62, 68);
+  --width:260px;
+  font-family: Verdana, Helvetica, sans-serif;
+}
+body{
+  margin:0px;
+  width:100%; 
+  background:rgb(234, 234, 236);
+}
+
+/*No longer being used byt the :hover and :focus are neat to take example from*/
+/* .close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+} */
+
+#navlogo{
+  position:relative;
+  top:7%;
+  left:0.3%;
+  height: 85%;
+  width:0px;
+}
+#pageHead{
+  top:0px;
+  left:0px;
+  right:0px;
+  height:11.5%;
+  background:var(--backblue);
+  position:fixed;
+  z-index:5;
+}
+#navbar{
+  user-select: none;
+  left:2.5%;
+  width: 95%;
+  background-color:var(--themeBlue);
+  top:6.75%;
+  position:fixed;
+  height:9%;
+  z-index: 5;
+}
+.navbtn{
+  border-width:0px;
+  /* width:100px; */
+  background-color:transparent;
+  border-left-width:1px;
+  border-color:var(--darkdarkgray);
+  font-size:120%;
+  position:relative;
+  bottom:25%;
+  left:.3%;
+}
+#aboutbtn{
+  left:-1px;
+  border-right-width:1px;
+}
+/* #navsearch{
+  border-width:1px;
+  background-color:white;
+  border-radius:5px;
+  position:relative;
+  float:right;
+  top:30px;
+  left:-30px;
+} */
+#pageBody{
+  margin: auto;
+  width: 93%;
+  background-color:white;
+}
+.pageDiv{
+width:240px;
+height:360px;
+position:relative;
+top:10px;
+left:10px;
+background-color:lightgray;
+}
+.pageImage{
+position:relative;
+left:20px;
+width:200px;
+height:220px;
+}
+.pageDivBorder{
+  background:white;
+  height:380px;
+  width:var(--width);
+  float:left;
+  left:0px;
+}
+.pageHead{
+  font-size: 16px;
+  position:relative;
+  left:20px;
+  padding-top:5px;
+  padding-bottom:5px;
+}
+.pageInfo{
+  font-size: 10px;
+  position:relative;
+  left:20px;
+  width:260px;
+  overflow:hidden;
+  padding-top:5px;
+  padding-bottom:5px;
+  
 }

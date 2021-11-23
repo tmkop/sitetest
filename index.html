@@ -1,1 +1,72 @@
-<div id="app"></div>
+<html>
+    <head>
+        <title>TKennerly - Home</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" type="image/ico" href="favicon.ico"/>
+    </head>
+    <body>
+      
+        <div id="pageHead">
+          <div id="headerBacking"></div>
+        </div>
+                
+        <div id="topSpacer" style="height:15.5%"></div>
+        
+        <div id="navbar">
+          <img src="Images/logo.png" id="navlogo">
+          <button id="homebtn" class="navbtn"><b>HOME</b></button>
+          <button id="aboutbtn" class="navbtn"><b>ABOUT</b></button>
+        </div>
+        
+        <div id="pageBody">
+            <div class="pageDivBorder">
+              
+                <div id="canvasTest" class="pageDiv">
+                    <br>
+                    <img src="Images/canvasTestIMG.PNG" class="pageImage">
+                    <br>
+                    <div class="pageHead">Canvas test</div>
+                    <div class="pageInfo">An interactive experiment exploring the <br>html canvas element.</div>
+                </div>
+                <script>
+                    const canvasTestDiv = document.getElementById("canvasTest");
+                    canvasTestDiv.onclick = function(){
+                    location.href='canvasTest.html'
+                    }
+                </script>
+            </div>
+            
+            <div class="pageDivBorder">
+                <div id="spirograph" class="pageDiv">
+                    <br>
+                    <img src="Images/spirograph.png" class="pageImage">
+                    <br>
+                    <div class="pageHead">Spirograph Sandbox</div>
+                    <div class="pageInfo">This is a interactive spirograph generator. <br>
+                    Not yet complete.</div>
+                </div>
+                <script>
+                    const spirographDiv = document.getElementById("spirograph");
+                    spirographDiv.onclick = function(){
+                    location.href='spirograph.html'
+                    }
+                </script>
+            </div>
+            
+        <script src="code.js"></script>
+        <script>
+            operate();
+            window.addEventListener('resize',operate);
+            var page = getElementById("pageBody");
+            function operate(){
+                pageWidth = page.clientWidth;
+                console.log(pageWidth);
+                var whiteSpace = pageWidth % 260;
+                var perRow = Math.floor(pageWidth/260);
+                var extraSpace = whiteSpace/perRow/2;
+                
+
+            }
+        </script>
+    </body>
+</html>
